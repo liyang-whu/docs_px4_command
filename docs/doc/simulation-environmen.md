@@ -255,3 +255,5 @@ __3、sitl_gazebo_formation.sh多机编队仿真__
 （３）、飞机解锁之后，设置好第一个坐标点，飞机起飞，相互位置会有所调换，然后悬停至稳定
 （４）、使用land模式之后，有的飞机会直接失控，有的会缓缓降落。
 （５）、飞机执行land落地之后飞行模式在pos与RTL之间频繁切换
+
+ <div align=center>![p200](http://files.amovauto.com:8088/group1/default/20190704/09/15/1/图一.png)</div>
