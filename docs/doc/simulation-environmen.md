@@ -234,6 +234,12 @@ __4、启动仿真__
 __1、sitl_gazebo_iris.sh正常offboard飞行__
 
 正常启动sitl_gazebo_iris.sh腳本，基本操作流程和实体飞机操作流程一致。
+先起飞3m,如下图:
+![iris_takeoff](https://i.loli.net/2019/08/01/5d4293c857c3095302.png)
+接着,我们在Move_Body坐标系下,x,y,z分别为1,1,0.飞行轨迹如下图:
+![iris_MoveBody_110](https://i.loli.net/2019/08/01/5d4294fb6fe2f91490.png)
+最后我们执行一下land模式,如下图:
+![iris_land](https://i.loli.net/2019/08/01/5d429671d1af767648.png)
 
 存在Bug描述：
 （1）、若起飞之后飞机降落至地面，无法进行再次起飞。（和实体飞机一致现象）
@@ -245,9 +251,19 @@ __1、sitl_gazebo_iris.sh正常offboard飞行__
 
 __2、sitl_gazebo_square.sh飞正方形__
 正常启动sitl_gazebo_square.sh脚本。确定并初始化px4_pos_controller节点。然后在set_mode节点中切换至offboard模式。检查square节点中，按键１执行飞正方形。最后在qgc中解锁飞机，飞机正常按照Point点进行飞行。
+在飞机飞正方形的时候,有5个point点的设置,飞行过程部分截图如下:
+point1:
+![square_point1.png](https://i.loli.net/2019/08/01/5d42997d165f597762.png)
+point2:
+![square_point2.png](https://i.loli.net/2019/08/01/5d42997cc54df85520.png)
+point4:
+![square_point4.png](https://i.loli.net/2019/08/01/5d4299960207886771.png)
+point5
+![square_point5.png](https://i.loli.net/2019/08/01/5d429c53633cf52748.png)
 
 __3、sitl_gazebo_formation.sh多机编队仿真__
-正常启动sitl_gazebo_formation.sh，在启动正常的情况下（qgc可以连接上三个飞机），此时确认formation_control节点并初始化，按照ENU坐标系下，设置坐标点，三架飞机同步执行动作。
+正常启动sitl_gazebo_formation.sh，在启动正常的情况下（qgc可以连接上三个飞机），此时确认formation_control节点并初始化，按照ENU坐标系下，设置坐标点，三架飞机同步执行动作。如下图:
+![formation_start.png](https://i.loli.net/2019/08/01/5d429dfd8f27054497.png)
 
 存在Bug描述：
 （１）、启动脚本失败（已将时间由２改为４，成功启动概率增大）
@@ -255,6 +271,3 @@ __3、sitl_gazebo_formation.sh多机编队仿真__
 （３）、飞机解锁之后，设置好第一个坐标点，飞机起飞，相互位置会有所调换，然后悬停至稳定
 （４）、使用land模式之后，有的飞机会直接失控，有的会缓缓降落。
 （５）、飞机执行land落地之后飞行模式在pos与RTL之间频繁切换
-
-
-![new](http://files.amovauto.com:8088/group1/default/20190801/12/23/1/Selection_005.png)
