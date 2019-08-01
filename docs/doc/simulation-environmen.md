@@ -257,5 +257,5 @@ __3、sitl_gazebo_formation.sh多机编队仿真__
 （５）、飞机执行land落地之后飞行模式在pos与RTL之间频繁切换
 
 
-![Selection_002](/assets/Selection_002.png)
+![Selection_002](http://files.amovauto.com:8088/group1/default/20190704/09/15/1/图一.png))
 
