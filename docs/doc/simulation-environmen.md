@@ -227,6 +227,7 @@ __4、启动仿真__
 启动sitl_gazebo_iris.sh脚本,执行如下
 
       amov@amov:~/AMOV_WorkSpace/px4_ws/src/px4_command/sh/sh_for_simulation$ ./sitl_gazebo_iris.sh  
+
 即可进入仿真界面。
 
 #### 第四节、仿真脚本说明
@@ -235,22 +236,34 @@ __1、sitl_gazebo_iris.sh正常offboard飞行__
 
 正常启动sitl_gazebo_iris.sh腳本，基本操作流程和实体飞机操作流程一致。
 先起飞3m,如下图:
+
 ![iris_takeoff.png](https://i.loli.net/2019/08/01/5d42bd8d4dc7974781.png)
+
 接着,我们在Move_Body坐标系下,x,y,z分别为1,1,0.飞行轨迹如下图:
+
 ![iris_MoveBody_110.png](https://i.loli.net/2019/08/01/5d42bd827b67542187.png)
+
 最后我们执行一下land模式,如下图:
+
 ![iris_land.png](https://i.loli.net/2019/08/01/5d42bd779ad0c34769.png)
 
 存在Bug描述：
+
 （1）、若起飞之后飞机降落至地面，无法进行再次起飞。（和实体飞机一致现象）
+
 （2）、在ENU坐标系下，若使用速度控制，进行起飞2M，飞机一致向上飞，不会停止，在gazebo中，飞至26M，切换至悬停模式，无法成功相应，飞至30M，切换至land，正常降落。
+
 （3）、经过多次测试，move节点中，按键4hold模式无响应，在两种坐标系下的速度控制中，飞机一直向上飞。
+
 （4）、在passivity控制率下，正常设置起飞3M，飞机纯粹油门量最大向上直飞，到达53M左右之后，有姿态角的迅速降落，直至炸机。
+
 （5）、在NE控制率下，正常设置起飞3M，飞机纯粹油门量最大向上直飞，一直飞。
 
 
 __2、sitl_gazebo_square.sh飞正方形__
+
 正常启动sitl_gazebo_square.sh脚本。确定并初始化px4_pos_controller节点。然后在set_mode节点中切换至offboard模式。检查square节点中，按键１执行飞正方形。最后在qgc中解锁飞机，飞机正常按照Point点进行飞行。
+
 在飞机飞正方形的时候,有5个point点的设置,飞行过程部分截图如下:
 point1:
 ![square_point1.png](https://i.loli.net/2019/08/01/5d42bd9442b5991438.png)
@@ -258,7 +271,7 @@ point2:
 ![square_point2.png](https://i.loli.net/2019/08/01/5d42bd9330f2910370.png)
 point4:
 ![square_point4.png](https://i.loli.net/2019/08/01/5d42bd934429c17244.png)
-point5
+point5:
 ![square_point5.png](https://i.loli.net/2019/08/01/5d42bd940f27276245.png)
 
 __3、sitl_gazebo_formation.sh多机编队仿真__
