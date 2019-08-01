@@ -49,7 +49,6 @@ px4_command这个无人机ROS包的使用说明文档
 .. toctree::
    :maxdepth: 1
 
-   doc/readme
    doc/P200视觉无人机操作说明
 .. Indices and tables
 .. ==================
