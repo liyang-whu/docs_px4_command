@@ -256,4 +256,6 @@ __3、sitl_gazebo_formation.sh多机编队仿真__
 （４）、使用land模式之后，有的飞机会直接失控，有的会缓缓降落。
 （５）、飞机执行land落地之后飞行模式在pos与RTL之间频繁切换
 
- <div align=center>![p200](http://files.amovauto.com:8088/group1/default/20190704/09/15/1/图一.png)</div>
+
+
+
