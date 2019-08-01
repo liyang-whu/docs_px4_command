@@ -264,3 +264,4 @@ __3、sitl_gazebo_formation.sh多机编队仿真__
 <img src="http://files.amovauto.com:8088/group1/default/20190705/09/08/1/图二.jpg"  height="500" width="650" align= "center">
 </div>
 
+![new](http://files.amovauto.com:8088/group1/default/20190801/12/23/1/Selection_005.png)
