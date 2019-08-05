@@ -20,7 +20,7 @@ px4_command这个无人机ROS包的使用说明文档
 .. toctree::
    :maxdepth: 1
 
-   doc/软件构架
+   doc/软件架构
 .. Indices and tables
 .. ==================
 
