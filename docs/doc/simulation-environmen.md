@@ -237,15 +237,15 @@ __1、sitl_gazebo_iris.sh正常offboard飞行__
 正常启动sitl_gazebo_iris.sh腳本，基本操作流程和实体飞机操作流程一致。
 先起飞3m,如下图:
 
-![iris_takeoff.png](https://i.loli.net/2019/08/01/5d42bd8d4dc7974781.png)
+![](https://i.loli.net/2019/08/01/5d42bd8d4dc7974781.png)
 
 接着,我们在Move_Body坐标系下,x,y,z分别为1,1,0.飞行轨迹如下图:
 
-![iris_MoveBody_110.png](https://i.loli.net/2019/08/01/5d42bd827b67542187.png)
+![](https://i.loli.net/2019/08/01/5d42bd827b67542187.png)
 
 最后我们执行一下land模式,如下图:
 
-![iris_land.png](https://i.loli.net/2019/08/01/5d42bd779ad0c34769.png)
+![](https://i.loli.net/2019/08/01/5d42bd779ad0c34769.png)
 
 存在Bug描述：
 
@@ -266,17 +266,17 @@ __2、sitl_gazebo_square.sh飞正方形__
 
 在飞机飞正方形的时候,有5个point点的设置,飞行过程部分截图如下:
 point1:
-![square_point1.png](https://i.loli.net/2019/08/01/5d42bd9442b5991438.png)
+![](https://i.loli.net/2019/08/01/5d42bd9442b5991438.png)
 point2:
-![square_point2.png](https://i.loli.net/2019/08/01/5d42bd9330f2910370.png)
+![](https://i.loli.net/2019/08/01/5d42bd9330f2910370.png)
 point4:
-![square_point4.png](https://i.loli.net/2019/08/01/5d42bd934429c17244.png)
+![](https://i.loli.net/2019/08/01/5d42bd934429c17244.png)
 point5:
-![square_point5.png](https://i.loli.net/2019/08/01/5d42bd940f27276245.png)
+![](https://i.loli.net/2019/08/01/5d42bd940f27276245.png)
 
 __3、sitl_gazebo_formation.sh多机编队仿真__
 正常启动sitl_gazebo_formation.sh，在启动正常的情况下（qgc可以连接上三个飞机），此时确认formation_control节点并初始化，按照ENU坐标系下，设置坐标点，三架飞机同步执行动作。如下图:
-![formation_start.png](https://i.loli.net/2019/08/01/5d42bd716e10061329.png)
+![](https://i.loli.net/2019/08/01/5d42bd716e10061329.png)
 
 存在Bug描述：
 （１）、启动脚本失败（已将时间由２改为４，成功启动概率增大）
