@@ -181,13 +181,13 @@ __5、下载QGroundControl__
 
 上节中，我们已经搭建好PX4仿真的环境了，而本节旨在下载阿木社区的源码，并且建立新的工作空间到个人工作路径下，然后配置仿真所使用的固件版本的选择以及环境配置，最后进行仿真操作。先从如何下载阿木社区源码说起
 
-__1、注册阿木社区的gitlab账户__
+__1、打开阿木社区的GitHub__
 
-上网登录 http://gitlab.amovauto.com 阿木社区的gitlab。未注册过的，请先注册。登录之后，等待管理员授予权限，可进行相应的可读，可下载权限，进行下一步操作。
+上网进入 https://github.com/amov-lab/px4_command 阿木社区维护的GitHub。
 
 __2、下载源码并建立工作区间__
 
-详细的建立工作空间请查看阿木社区gitlab上的项目 __px4_commander__ 。或者如下链接：http://gitlab.amovauto.com/amovlab/px4_command 
+详细的建立工作空间请查看阿木社区GitHub上的项目 __px4_commander__ 。或者如下链接：https://github.com/amov-lab/px4_command 
 
 建立好工作空间之后，笔者的工作空间如下：
 
